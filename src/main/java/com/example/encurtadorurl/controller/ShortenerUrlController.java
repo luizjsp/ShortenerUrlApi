@@ -9,9 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 @RestController
@@ -20,17 +18,6 @@ public class ShortenerUrlController {
 
     @Autowired
     private ShortenerUrlService shortenerUrlService;
-
-//    @PostMapping
-//    public ResponseEntity<Map<String, String>> createShortUrl(@RequestBody Map<String, String> request) {
-//        String originalUrl = request.get("originalUrl");
-//        String shortUrl = UUID.randomUUID().toString().substring(0, 6);
-//        shortenerUrlService.saveUrl(originalUrl, shortUrl);
-//        Map<String, String> response = new HashMap<>();
-//        response.put("originalUrl", originalUrl);
-//        response.put("shortUrl", shortUrl);
-//        return new ResponseEntity<>(response, HttpStatus.CREATED);
-//    }
 
     @PostMapping
     public ResponseEntity<URLResponseDTO> createShortUrl(@RequestBody URLRequestDTO request) {
