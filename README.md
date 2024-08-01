@@ -74,6 +74,12 @@ Um serviço de encurtamento de URLs desenvolvido em Spring Boot. Esta API permit
 
     Faça uma solicitação GET para `/api/v1/urls/stats` para obter uma lista de todas as URLs encurtadas e suas estatísticas de acesso.
 
+## Documentação da API
+
+A documentação da API está disponível no Swagger UI. Após iniciar a aplicação, você pode acessá-la no seguinte endereço:
+
+[Swagger UI](http://localhost:8080/swagger-ui/index.html)  
+
 ## Contribuição
 
 Contribuições são bem-vindas! Se você deseja contribuir para este projeto, por favor siga estas etapas:
