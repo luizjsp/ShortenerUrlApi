@@ -80,6 +80,29 @@ A documentação da API está disponível no Swagger UI. Após iniciar a aplica�
 
 [Swagger UI](http://localhost:8080/swagger-ui/index.html)  
 
+## Testes
+
+### Descrição dos Testes
+
+O projeto inclui um conjunto de testes para garantir que a aplicação funcione corretamente e para prevenir regressões. Os testes cobrem aspectos como controle de URLs, encurtamento e gerenciamento de URLs.
+
+### Pré-requisitos
+
+Certifique-se de ter o ambiente configurado corretamente com as seguintes dependências:
+
+- [JUnit](https://junit.org/junit4/) (para testes unitários)
+- [Mockito](https://site.mockito.org/) (para mocks e testes de integração)
+
+### Como Executar os Testes
+
+Para executar os testes, você pode usar o comando abaixo ou clicando com o botão direito na classe de teste e selecionando "Run".. Certifique-se de estar na raiz do projeto:
+
+#### Usando Maven:
+
+```bash
+mvn test
+```
+
 ## Contribuição
 
 Contribuições são bem-vindas! Se você deseja contribuir para este projeto, por favor siga estas etapas:
